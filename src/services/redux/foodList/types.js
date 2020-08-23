@@ -1,0 +1,2 @@
+export const GET_FOOD_LIST = 'GET_FOOD_LIST';
+export const FOOD_LIST_FAILED = 'FOOD_LIST_FAILED';
