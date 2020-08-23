@@ -25,3 +25,11 @@ you approach the problem.
 4. Attaching screenshots and a video below for your reference.
 Video: https://d.pr/free/v/ZGcp7T
 Screenshots (Try to design something like this):
+
+####################################
+How to run the project after taken pull?
+=> After taken pull, need to run "yarn install",
+=> To Start server "yarn start",
+=> To Start project "react-native run-android",
+=> This is tested only for android device.
+=> if any query/concern please contact me #9990030487.
