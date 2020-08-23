@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 export const cancelIcon = require('./images/cancel.png');
 export const chatIcon = require('./images/chat.jpg');
 export const downArrow = require('./images/down-arrow.png');

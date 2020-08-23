@@ -7,6 +7,7 @@ import {
   ScrollView,
   TextInput,
   Alert,
+  SafeAreaView
 } from 'react-native';
 import {
   cancelIcon,
@@ -75,9 +76,9 @@ const FoodList = ({navigation, getFoodList, foodList}) => {
 
   const searchSubCategoryItem = (val) => {
     let searchedArr = [];
-    foodList.categories.forEach((element, index) => {
-      element.category.subcategories.forEach((subElement, subIndex) => {
-        subElement.items.forEach((items, itemIndex) => {
+    foodList.categories.forEach((element) => {
+      element.category.subcategories.forEach((subElement) => {
+        subElement.items.forEach((items) => {
           if (items.toUpperCase().includes(val.toUpperCase())) {
             const obj = {
               categoryName: element.category.categoryName,
@@ -106,7 +107,7 @@ const FoodList = ({navigation, getFoodList, foodList}) => {
   const goBack = () => navigation.goBack();
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <ScrollView>
         <View style={styles.header}>
           <TouchableOpacity onPress={goBack} style={styles.backIcon}>
@@ -295,7 +296,7 @@ const FoodList = ({navigation, getFoodList, foodList}) => {
         style={styles.chatWrapCircle}>
         <Image style={styles.chatIcon} source={chatIcon} />
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 };
 
